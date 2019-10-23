@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="is">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Námskeið</title>
+
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+        <h3>Námskeið</h3>
+        <p>Prílihúsið býður upp á fjölbreytt námskeið fyrir byrjendur og lengra komna. Námskeiðin eru kennd af engri annarri en Karítas Pétursdóttir. Fyrir fólk á öllum aldri. Skráðu þig núna!
+        Mynd af Prílihúsinu</p>
+
+    <form>
+        <fieldset>
+            <legend>Almennar upplýsingar</legend>
+            Nafn: <input type="text"><br>
+            Heimilisfang: <input type="text"><br>
+            Aldur: <input type="number"><br>
+            Námskeið: <select name="zip">
+                    <option value="V0-V1">V0 - V1</option>
+                    <option value="V2-V4">V2 - V4</option>
+                    <option value="V5-V7">V5 - V7</option>
+                    <option value="Krakkanámskeið">Krakkanámskeið</option>
+                    <option value="Fjallaklifur">Fjallaklifur</option>
+            </select>
+        </fieldset>
+    </form>
+
+    <form>
+        <fieldset>
+            <legend>Greiðsluupplýsingar</legend>
+            Kortanúmer: <input type="number"><br>
+            Korthafi: <input type="text"><br>
+            Gildistími:
+            Mán: <select name="month">
+                <option value="01">01</option>
+                <option value="02">02</option>
+                <option value="03">03</option>
+                <option value="04">04</option>
+                <option value="05">05</option>
+                <option value="06">06</option>
+                <option value="07">07</option>
+                <option value="08">08</option>
+                <option value="09">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select>
+            Ár: <select name="year">
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+            </select>
+        </fieldset>
+    </form>
+
+    <button>Skrá</button>
+</body>
+
+</html>
