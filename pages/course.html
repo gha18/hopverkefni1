@@ -19,13 +19,13 @@
             <nav class="nav">
                 <div class="nav__row">
                     <ul class="nav__list">
-                        <li class="nav__item nav__item--active"><a href="index.html" class="nav__link">FORSÍÐA</a></li>
-                        <li class="nav__item"><a href="pages/products.html" class="nav__link">VÖRUR</a></li>
-                        <li class="nav__item"><a href="pages/staff.html" class="nav__link">STARFSFÓLK</a></li>
-                        <li class="nav__item"><a href="pages/course.html" class="nav__link">NÁMSSKEIÐ</a></li>
+                        <li class="nav__item nav__item--active"><a href="../index.html" class="nav__link">FORSÍÐA</a></li>
+                        <li class="nav__item"><a href="products.html" class="nav__link">VÖRUR</a></li>
+                        <li class="nav__item"><a href="staff.html" class="nav__link">STARFSFÓLK</a></li>
+                        <li class="nav__item"><a href="course.html" class="nav__link">NÁMSSKEIÐ</a></li>
                     </ul>
                     <div class="nav__cart"></div>
-                    <a class="nav__button" href="pages/cart.html">
+                    <a class="nav__button" href="cart.html">
                         KARFA (6)
                     </a>
                 </div>
@@ -54,50 +54,70 @@
             </div>
         </section>
 
-        <form>
-            <fieldset>
-                <legend>Almennar upplýsingar</legend>
-                Nafn: <input type="text"><br>
-                Heimilisfang: <input type="text"><br>
-                Aldur: <input type="number"><br>
-                Námskeið: <select name="zip">
-                    <option value="V0-V1">V0 - V1</option>
-                    <option value="V2-V4">V2 - V4</option>
-                    <option value="V5-V7">V5 - V7</option>
-                    <option value="Krakkanámskeið">Krakkanámskeið</option>
-                    <option value="Fjallaklifur">Fjallaklifur</option>
-                </select>
-            </fieldset>
-        </form>
+        <section class="section">
+            <div class="section__row">
+                <div class="section__col">
+                    <div class="section__content">
+                        <form>
+                            <fieldset>
+                                <legend class="section__title">Almennar upplýsingar</legend>
+                                <label class="form__label">Nafn: </label><input class="form__input" type="text"><br>
+                                <label class="form__label">Heimilisfang: </label><input class="form__input"
+                                    type="text"><br>
+                                <label class="form__label">Aldur: </label><input class="form__input" type="number"><br>
+                                <label class="form__label">Námskeið: </label><select class="form__input">
+                                    <option value="V0-V1">V0 - V1</option>
+                                    <option value="V2-V4">V2 - V4</option>
+                                    <option value="V5-V7">V5 - V7</option>
+                                    <option value="Krakkanámskeið">Krakkanámskeið</option>
+                                    <option value="Fjallaklifur">Fjallaklifur</option>
+                                </select>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
 
-        <form>
-            <fieldset>
-                <legend>Greiðsluupplýsingar</legend>
-                Kortanúmer: <input type="number"><br>
-                Korthafi: <input type="text"><br>
-                Gildistími:
-                Mán: <select name="month">
-                    <option value="01">01</option>
-                    <option value="02">02</option>
-                    <option value="03">03</option>
-                    <option value="04">04</option>
-                    <option value="05">05</option>
-                    <option value="06">06</option>
-                    <option value="07">07</option>
-                    <option value="08">08</option>
-                    <option value="09">09</option>
-                    <option value="10">10</option>
-                    <option value="11">11</option>
-                    <option value="12">12</option>
-                </select>
-                Ár: <select name="year">
-                    <option value="2019">2019</option>
-                    <option value="2020">2020</option>
-                    <option value="2021">2021</option>
-                    <option value="2022">2022</option>
-                </select>
-            </fieldset>
-        </form>
+                <div class="section__col">
+                    <div class="section__content">
+                        <form>
+                            <fieldset>
+                                <legend class="section__title">Greiðsluupplýsingar</legend>
+                                <label class="form__label">Kortanúmer: </label><input class="form__input"
+                                    type="number"><br>
+                                <label class="form__label">Korthafi: </label><input class="form__input" type="text"><br>
+                                <label class="form__label">Gildistími: </label>
+                                <div class="input--small">
+                                    <label class="form__label--small">Mán </label>
+                                    <select class="form__input--small" name="month">
+                                        <option value="01">01</option>
+                                        <option value="02">02</option>
+                                        <option value="03">03</option>
+                                        <option value="04">04</option>
+                                        <option value="05">05</option>
+                                        <option value="06">06</option>
+                                        <option value="07">07</option>
+                                        <option value="08">08</option>
+                                        <option value="09">09</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                    </select>
+                                </div>
+                                <div class="input--small">
+                                    <label class="form__label--small">Ár </label>
+                                    <select class="form__input--small" name="year">
+                                        <option value="2019">2019</option>
+                                        <option value="2020">2020</option>
+                                        <option value="2021">2021</option>
+                                        <option value="2022">2022</option>
+                                    </select>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <div class="button--middle">
             <button class="button button--blue">Skrá</button>
@@ -114,15 +134,15 @@
                 <div class="footer__col">
                     <h2 class="footer__title">Vöruflokkar</h2>
                     <ul class="footer__list">
-                        <li class="footer__item"><a href="pages/products.html" class="footer__link">Nauðsynjavörur</a>
+                        <li class="footer__item"><a href="products.html" class="footer__link">Nauðsynjavörur</a>
                         </li>
-                        <li class="footer__item"><a href="pages/products.html" class="footer__link">Frábærar vörur</a>
+                        <li class="footer__item"><a href="products.html" class="footer__link">Frábærar vörur</a>
                         </li>
-                        <li class="footer__item"><a href="pages/products.html" class="footer__link">Ómissandi vörur</a>
+                        <li class="footer__item"><a href="products.html" class="footer__link">Ómissandi vörur</a>
                         </li>
-                        <li class="footer__item"><a href="pages/products.html" class="footer__link">Ótrúlegar vörur</a>
+                        <li class="footer__item"><a href="products.html" class="footer__link">Ótrúlegar vörur</a>
                         </li>
-                        <li class="footer__item"><a href="pages/products.html" class="footer__link">Magnaðar vörur</a>
+                        <li class="footer__item"><a href="products.html" class="footer__link">Magnaðar vörur</a>
                         </li>
                     </ul>
                 </div>
@@ -130,36 +150,36 @@
                 <div class="footer__col">
                     <h2 class="footer__title">Vöruflokkar</h2>
                     <ul class="footer__list">
-                        <li class="footer__item"><a href="pages/products.html" class="footer__link">Trylltar vörur</a>
+                        <li class="footer__item"><a href="products.html" class="footer__link">Trylltar vörur</a>
                         </li>
-                        <li class="footer__item"><a href="pages/products.html" class="footer__link">Geggjaðar vörur</a>
+                        <li class="footer__item"><a href="products.html" class="footer__link">Geggjaðar vörur</a>
                         </li>
-                        <li class="footer__item"><a href="pages/products.html" class="footer__link">Svakalegar vörur</a>
+                        <li class="footer__item"><a href="products.html" class="footer__link">Svakalegar vörur</a>
                         </li>
-                        <li class="footer__item"><a href="pages/products.html" class="footer__link">Fáránlegar vörur</a>
+                        <li class="footer__item"><a href="products.html" class="footer__link">Fáránlegar vörur</a>
                         </li>
-                        <li class="footer__item"><a href="pages/products.html" class="footer__link">Klikkaðar vörur</a>
+                        <li class="footer__item"><a href="products.html" class="footer__link">Klikkaðar vörur</a>
                         </li>
                     </ul>
                 </div>
 
                 <div class="footer__col">
-                    <h2 class="footer__title">Námsskeið</h2>
+                    <h2 class="footer__title">Námskeið</h2>
                     <ul class="footer__list">
-                        <li class="footer__item"><a href="pages/course.html" class="footer__link">V0 - V1</a></li>
-                        <li class="footer__item"><a href="pages/course.html" class="footer__link">V2 - V4</a></li>
-                        <li class="footer__item"><a href="pages/course.html" class="footer__link">V5 - V7</a></li>
-                        <li class="footer__item"><a href="pages/course.html" class="footer__link">Fjallaklifur</a></li>
+                        <li class="footer__item"><a href="course.html" class="footer__link">V0 - V1</a></li>
+                        <li class="footer__item"><a href="course.html" class="footer__link">V2 - V4</a></li>
+                        <li class="footer__item"><a href="course.html" class="footer__link">V5 - V7</a></li>
+                        <li class="footer__item"><a href="course.html" class="footer__link">Fjallaklifur</a></li>
                     </ul>
                 </div>
 
                 <div class="footer__col">
                     <h2 class="footer__title">Síður</h2>
                     <ul class="footer__list">
-                        <li class="footer__item"><a href="pages/products.html" class="footer__link">Allar vörur</a></li>
-                        <li class="footer__item"><a href="pages/staff.html" class="footer__link">Starfsfólk</a></li>
-                        <li class="footer__item"><a href="pages/course.html" class="footer__link">Námsskeið</a></li>
-                        <li class="footer__item"><a href="pages/cart.html" class="footer__link">Karfa</a></li>
+                        <li class="footer__item"><a href="products.html" class="footer__link">Allar vörur</a></li>
+                        <li class="footer__item"><a href="staff.html" class="footer__link">Starfsfólk</a></li>
+                        <li class="footer__item"><a href="course.html" class="footer__link">Námsskeið</a></li>
+                        <li class="footer__item"><a href="cart.html" class="footer__link">Karfa</a></li>
                     </ul>
                 </div>
             </div>

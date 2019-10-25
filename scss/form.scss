@@ -1,0 +1,38 @@
+fieldset {
+    border: 0;
+  }
+
+  .form {
+      &__input {
+          font-size: 18px;
+          display: inline-block;
+          border: 1px solid $black;
+          border-radius: 2px;
+          height: 40px;
+          margin: 0.5*$gutter 0;
+          width: calc(3.5 * 100% / 6);
+          &--small {
+            font-size: 18px;
+            border: 1px solid $black;
+            border-radius: 2px;
+            height: 40px;
+            margin: 0.5*$gutter auto;
+          }
+      }
+
+      &__label {
+        font-size: 18px;
+          display: inline-block;
+          width: calc(100% - 3.5 * 100% / 6);
+          &--small {
+            font-size: 18px;
+            line-height: 60px;
+          }
+      }
+  }
+
+  .input--small {
+    width: calc(3.5 * 100% / 12 - 10px);
+    display: inline-flex;
+    vertical-align: center;
+}

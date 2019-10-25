@@ -1,5 +1,6 @@
 @import "scss/config";
 @import "scss/buttons";
+@import "scss/form";
 
 * {
   padding: 0;
@@ -148,8 +149,4 @@ main { /* stylelint-disable-line */
   .image--first-flex-item {
     order: 1;
   }
-}
-
-fieldset {
-  border: 0;
 }
