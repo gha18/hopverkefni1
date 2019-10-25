@@ -18,4 +18,82 @@ html { /* stylelint-disable-line */
   // TODO fleiri grunn stillingar
 }
 
+main {
+  max-width: $max-width;
+  margin: 0 auto;
+}
 
+.section {
+  max-width: $max-width;
+  margin: 0 auto;
+
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -0.5*$gutter;
+    margin-right: -0.5*$gutter;
+    padding-bottom: 2*$gutter;
+ }
+
+  &__col {
+    width: 50%;
+    padding-right: 0.5*$gutter;
+    padding-left: 0.5*$gutter;
+  }
+
+  &__title {
+    font-size: 36px;
+    font-weight: bolder;
+  }
+
+  &__text {
+    font-size: 24px;
+    margin: 2*$gutter auto;
+  }
+
+  &__button {
+    border-radius: 5px;
+    background-color: $blue;
+    color: $black;
+    width: 250px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+    transition: background-color 200ms ease-in-out;
+    &:hover {
+      background-color: $orange;
+    }
+  }
+}
+
+a.button {
+  display: inline-block;
+  width: 100%;
+  transition: color 200ms ease-in-out;
+  &:hover {
+    color: $white;
+  }
+}
+
+.image {
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+@media(max-width: 750px) {
+  .section {
+    &__col {
+      width: 100%;
+      margin-top: 2*$gutter;
+    }
+
+    &__row {
+      padding-bottom: 0;
+    }
+  }
+
+  .image--first-flex-item {
+    order: 1;
+  }
+}

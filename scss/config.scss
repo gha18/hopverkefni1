@@ -10,7 +10,7 @@ $blue: #00b7ff;
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Oswald&display=swap');
 
-p {
+p, a {
     font-family: 'Open Sans', helvetica, arial,  sans-serif;
 }
 
@@ -21,4 +21,9 @@ h4,
 h5,
 h6 {
   font-family: 'Oswald', Verdana, serif;
+}
+
+a {
+    text-decoration: none;
+    color: $black;
 }
