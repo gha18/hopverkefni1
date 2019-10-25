@@ -7,7 +7,8 @@
     "browser-sync": "browser-sync start --server --files index.html",
     "sass": "node-sass --source-map-embed styles.scss styles.css",
     "sass-watch": "node-sass --source-map-embed --watch *.scss --recursive styles.css",
-    "lint": "stylelint styles.scss --syntax scss"
+    "lint": "stylelint styles.scss --syntax scss",
+    "dev": "npm-run-all --parallel sass browser-sync"
   },
   "repository": {
     "type": "git",
