@@ -1,4 +1,5 @@
 @import "scss/config";
+@import "scss/buttons";
 
 * {
   padding: 0;
@@ -14,26 +15,37 @@
 html { /* stylelint-disable-line */
   box-sizing: border-box;
   overflow-x: hidden;
-
-  // TODO fleiri grunn stillingar
 }
 
-main {
+main { /* stylelint-disable-line */
   max-width: $max-width;
   margin: 0 auto;
 }
 
+@media (max-width: 1240px) and (min-width: 1200px) {
+  main { /* stylelint-disable-line */
+    padding: 0 calc(20px - (100vw - 1200px) / 2);
+  }
+}
+
+@media (max-width: 1200px) {
+  main { /* stylelint-disable-line */
+    padding: 0 20px;
+  }
+}
+
 .section {
+  display: flex;
   max-width: $max-width;
   margin: 0 auto;
 
   &__row {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -0.5*$gutter;
-    margin-right: -0.5*$gutter;
     padding-bottom: 2*$gutter;
- }
+    margin-right: -0.5*$gutter;
+    margin-left: -0.5*$gutter;
+  }
 
   &__col {
     width: 50%;
@@ -47,41 +59,76 @@ main {
   }
 
   &__text {
-    font-size: 24px;
     margin: 2*$gutter auto;
-  }
+    font-size: 24px;
 
-  &__button {
-    border-radius: 5px;
-    background-color: $blue;
-    color: $black;
-    width: 250px;
-    height: 50px;
-    text-align: center;
-    line-height: 50px;
-    font-size: 18px;
-    transition: background-color 200ms ease-in-out;
-    &:hover {
-      background-color: $orange;
+    &--small {
+      margin: $gutter auto;
+      font-size: 16px;
     }
   }
-}
 
-a.button {
-  display: inline-block;
-  width: 100%;
-  transition: color 200ms ease-in-out;
-  &:hover {
-    color: $white;
+  &__price {
+    margin: $gutter auto;
+    font-size: 24px;
+  }
+
+  &__content--fill {
+    flex-grow: 1;
+    display: flex;
+  }
+
+  &__content--bottom {
+    align-self: flex-end;
+  }
+
+  &__label {
+    display: block;
+  }
+
+  &__input {
+    width: 100px;
+    height: 40px;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid $black;
+    border-radius: 2px;
   }
 }
 
 .image {
   max-width: 100%;
   margin-bottom: 20px;
+
+  &--small {
+    max-width: 20px;
+    margin-right: 10px;
+  }
 }
 
-@media(max-width: 750px) {
+.col--third,
+.col--third3 {
+  width: calc(100% / 3);
+}
+
+.col--two-thirds {
+  display: flex;
+  width: calc(2 * 100% / 3);
+  height: auto;
+  flex-direction: column;
+}
+
+@media (max-width: 800px) {
+  .col--third3 {
+    width: 50%;
+  }
+}
+
+@media (max-width: 500px) {
+  .col--third3 {
+    width: 100%;
+  }
+
   .section {
     &__col {
       width: 100%;
