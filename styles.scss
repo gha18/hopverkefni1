@@ -35,7 +35,6 @@ main { /* stylelint-disable-line */
 }
 
 .section {
-  display: flex;
   max-width: $max-width;
   margin: 0 auto;
 
@@ -93,6 +92,12 @@ main { /* stylelint-disable-line */
     font-size: 16px;
     border: 1px solid $black;
     border-radius: 2px;
+  }
+
+  &--flex {
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
