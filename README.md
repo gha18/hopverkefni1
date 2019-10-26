@@ -1,5 +1,5 @@
 
-# Upplýsingar um hvernig skal þetta verkefni
+# Upplýsingar um hvernig keyra skal þetta verkefni
 
 Til að keyra þetta forrit skal fyrst niðurhala og setja upp node.js. Síðan skal clona verkefnið og keyra "npm install" í 
 command line interfacinu eða terminalinu. Svo næst skal slá inn npm run sass og að lokum er hægt að ýta á index.html og þá ætti vafrin að ljóma upp vefsíðuna í öllu sínu veldi.
