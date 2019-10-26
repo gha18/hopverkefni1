@@ -1,42 +1,46 @@
 .button {
   &--blue {
-    border-radius: 5px;
-    background-color: $blue;
-    color: $black;
     width: 250px;
     height: 50px;
-    text-align: center;
-    line-height: 50px;
     font-size: 18px;
+    line-height: 50px;
+    color: $black;
+    text-align: center;
+    background-color: $blue;
+    border-radius: 5px;
     transition: background-color 200ms ease-in-out;
+
     &:hover {
       background-color: $orange;
     }
   }
 
   &--grey {
-    height: 40px; 
-    font-size: 16px;
-    border-radius: 2px;
-    border: 1px solid $black;
+    height: 40px;
     padding: 8px;
+    font-size: 16px;
+    border: 1px solid $black;
+    border-radius: 2px;
     transition: background-color 200ms ease-in-out;
+
     &:hover {
       background-color: $blue;
+      border-color: $blue;
     }
-  }    
+  }
 
   &--middle {
+    padding: 2*$gutter;
     margin: auto;
     text-align: center;
-    padding: 2*$gutter;
   }
 }
-  
+
 a.button--blue {
   display: inline-block;
   width: 100%;
   transition: color 200ms ease-in-out;
+
   &:hover {
     color: $white;
   }
