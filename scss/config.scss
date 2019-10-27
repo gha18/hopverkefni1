@@ -8,6 +8,28 @@ $blue: #00b7ff;
 
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Oswald&display=swap");
 
+$transition: 200ms ease-in-out;
+$font-heading: "Oswald", Verdana, serif;
+
+@mixin row() {
+  display: flex;
+
+  margin-right: -($gutter / 2);
+  margin-left: -($gutter / 2);
+}
+
+@mixin columns($col: 1) {
+  
+  width: ($col / 12 * 100) * 1%;
+
+  padding-right: $gutter / 2;
+  padding-left: $gutter / 2;
+}
+
+@mixin offset-left($cols: 0) {
+  margin-left: ($cols/12 * 100) * 1%;
+}
+
 p,
 a,
 label,
