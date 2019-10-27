@@ -12,6 +12,8 @@ command line interfacinu eða terminalinu. Svo næst skal slá inn npm run sass 
 
 Verkefnið byggist á tólinu sass og í verkefninu er heil mappa af nokkrum scss skjölum þar sem hvað og eitt skjal verkar á sérstakan hluta á vefsíðunni. Þær eru svo þýddar í einni skrá ( styles.scss ) með @import-reglunni. Í styles.scss er einnig að finna scss kóða fyrir allar síðurnar ( fyrir utan forsíðuna ).
 
+Í config.scss skránni er að finna hina ýmsu kóða sem hjálpaði okkur við að hanna vefsíðuna.
+
 Í Pages möppunni eru að finna html skrár þar sem hver skrá inniheldur html kóða af tiltekinni síðu.
 
 Í img möppunni eru jpg myndir sem eru hluti af vefsíðunni.
@@ -24,6 +26,8 @@ Index.html inniheldur html kóðann fyrir forsíðuna og í henni eru linkar yfi
 ## Upplýsingar um alla sem unnu verkefnið
 
 Guðrún Herdís Arnarsdóttir gha18@hi.is
+
 Viktor Franksson vif6@hi.is
+
 Sigurþór Ingi
 
